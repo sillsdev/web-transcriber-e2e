@@ -10,7 +10,6 @@
     "dbaeumer.vscode-eslint",
     "eriklynd.json-tools",
     "yzhang.markdown-all-in-one",
-    "ryu1kn.partial-diff",
     "esbenp.prettier-vscode",
     "ms-vscode.vscode-typescript-tslint-plugin",
     "andyyaldoo.vscode-json",
@@ -18,5 +17,8 @@
     "earshinov.sort-lines-by-selection"
   ],
   // List of extensions recommended by VS Code that should not be recommended for users of this workspace.
-  "unwantedRecommendations": []
+  "unwantedRecommendations": [
+    "formulahendry.dotnet-test-explorer",
+    "ryu1kn.partial-diff"
+  ]
 }

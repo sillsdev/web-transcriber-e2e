@@ -34,8 +34,8 @@ Cypress.Commands.add("login", (overrides = {}) => {
     url: Cypress.env("auth_url"),
     body: {
       grant_type: "password",
-      username: Cypress.env("auth_username"),
-      password: Cypress.env("auth_password"),
+      username: overrides.email || Cypress.env("auth_username"),
+      password: overrides.pw || Cypress.env("auth_password"),
       audience: Cypress.env("auth_audience"),
       scope: "openid profile email",
       client_id: Cypress.env("auth_client_id"),
